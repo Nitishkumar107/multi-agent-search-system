@@ -22,7 +22,7 @@ pipeline{
         stage('Sonarqube Analysis')
         {
             steps {
-                withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_TOKEN)])
+                withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_TOKEN')])
                 {
                 withSonarQubeEnv('sonarqube')
                 {
