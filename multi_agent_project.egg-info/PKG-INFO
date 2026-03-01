@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: multi_agent_project
+Version: 1.0.0
+Author: Nitish Kumar
+Author-email: kumar.n.gg365@gmail.com
+Requires-Dist: langchain-groq
+Requires-Dist: python-dotenv
+Requires-Dist: langchain-openai
+Requires-Dist: langgraph
+Requires-Dist: streamlit
+Requires-Dist: langchain
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Requires-Dist: langchain-community
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-huggingface
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
