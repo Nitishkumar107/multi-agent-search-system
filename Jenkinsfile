@@ -1,13 +1,13 @@
 pipeline{
     agent any
 
-    environment {
+   // environment {
         // SONAR_PROJECT_KEY = "LLMOPS"
         // SONAR_SCANNER_HOME = tool "Sonarqube"
         // AWS_REGION = "us-east-1"
         // ECR_REPO = 'llmops-repo'
         // IMAGE_TAG = 'Latest'
-    }
+   // }
 
     stages{
         stage('cloning Github repo to Jenkins')
