@@ -60,6 +60,12 @@ pipeline{
             {
                 script{
                     sh """
+                    echo "Listing clusters in us-east-1:"
+                    aws ecs list-clusters --region ${AWS_REGION}
+                    
+                    echo "Listing services in multi-ai-agent-cluster:"
+                    aws ecs list-services --cluster multi-ai-agent-cluster --region ${AWS_REGION} || true
+
                     aws ecs update-service \
                     --cluster multi-ai-agent-cluster \
                     --service multi-ai-agent-service-ebnd0hch \
