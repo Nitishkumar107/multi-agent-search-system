@@ -68,7 +68,7 @@ pipeline{
 
                     aws ecs update-service \
                     --cluster multi-ai-agent-cluster \
-                    --service multi-ai-agent-service-ebnd0hch \
+                    --service multi-ai-agent-def-service-ebnd0hch \
                     --force-new-deployment \
                     --region ${AWS_REGION}
                     """
