@@ -15,10 +15,6 @@ RUN apt-get update \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# copy the requirements file to the work directory
-#COPY requirements.txt .
-# install the dependencies
-RUN pip install --no-cache-dir -e .
 # copy the source code to the work directory
 COPY . .
 
@@ -31,4 +27,4 @@ EXPOSE 8000
 # Frontend
 EXPOSE 8501 
 # Run the backend
-CMD ["uvicorn", "app.backend.api:app", "--host", "[IP_ADDRESS]", "--port", "8000"]
+CMD ["uvicorn", "app.backend.api:app", "--host", "0.0.0.0", "--port", "8000"]
